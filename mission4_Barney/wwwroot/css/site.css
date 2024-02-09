@@ -1,0 +1,162 @@
+/* Reset Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+    text-transform: lowercase;
+    width: 100%;
+    height: 100%;
+}
+
+/* Global Styles */
+body {
+    background: #001220;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Header and Navigation Styles */
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 1.5rem;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(76, 76, 76, 0.36);
+    color: black;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5rem;
+    backdrop-filter: blur(4px);
+}
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+        nav ul li {
+            font-weight: bold;
+        }
+
+/* Side Navigation Styles */
+.side {
+    position: fixed;
+    top: 15%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+    .side a {
+        background: beige;
+        color: #fafafa;
+        font-size: 15px;
+        display: block;
+        width: 180px;
+        padding: 12px;
+        text-decoration: none;
+        margin: 8px 0;
+        border-radius: 6px;
+        margin-left: -150px;
+        transition: 0.5s all;
+        text-transform: lowercase;
+    }
+
+        .side a:hover {
+            margin-left: 0;
+            text-decoration: none;
+            color: #835EFF;
+        }
+
+/* Main Content Styles */
+.wrap {
+    overflow: hidden;
+    position: relative;
+    height: 250vh;
+    background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.overlay-text {
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20vh;
+    margin-right: 30vh;
+    margin-left: 30vh;
+}
+
+/* Privacy Page Styles */
+.privacy-wrap {
+    background-image: linear-gradient(-206deg, #835EFF 0%, #FF008D 100%);
+    min-height: 100vh;
+    width: 100%;
+}
+
+.spacer {
+    height: 75vh;
+}
+
+.spacer2 {
+    height: 10vh;
+}
+
+
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px;
+}
+
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+
+    .site-footer,
+    .page-wrap:after {
+        /* .push must be the same height as footer */
+        height: 40px;
+    }
+
+.site-footer {
+    background: black;
+    color: white
+}
+
+
+.unique-privacy-style {
+    min-height: ; /* Adjust the height to fit the viewport */
+    display: flex;
+    flex-direction: column;
+}
